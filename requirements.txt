@@ -2,8 +2,8 @@ streamlit
 langchain
 langchain-community
 boto3
-langchain_aws
 python-dotenv
 glib
 transformers
+
 
