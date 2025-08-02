@@ -1,6 +1,5 @@
 # 1. Import langchain functions
 from langchain_community.chat_models import BedrockChat
-from langchain_aws import ChatBedrock
 # from langchain.memory import ConversationSummaryBufferMemory
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationChain
@@ -35,4 +34,5 @@ def get_chat_response(input_text, memory):
         memory=memory,
     )
     chat_response = conversation.invoke(input=input_text)
+
     return chat_response['response'] 
